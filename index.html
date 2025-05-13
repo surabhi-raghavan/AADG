@@ -45,32 +45,35 @@
           world model
         </figcaption>
       </figure>
-      <p class="abstract-text">
-        We introduce a novel, general purpose audio generation framework
-        specifically designed for Audio Anomaly Detection(AAD) and Localization.
-        Unlike existing datasets that predominantly focus on industrial and
-        machine-related sounds, our framework focuses on a broader range of
-        environments, particularly useful in real-world scenarios where only
-        audio data are available, such as telephonic audio. To generate such
-        data, we propose a new method, Anomalous Audio Data Generation(AADG),
-        inspired by the LLM-Modulo <a href="">[1]</a> framework, which leverages
-        Large Language Models(LLMs) as world models to simulate such real-world
-        scenarios. This tool is modular, allowing for a plug-and-play approach.
-        It works by first using LLMs to predict plausible real-world scenarios.
-        An LLM further extracts the constituent sounds, the order and the way in
-        which these should be merged to create coherent wholes. Constituent
-        audios are then generated using text-to-audio models and merged based on
-        the LLM's instructions. We include a rigorous verification of each
-        output stage, ensuring the reliability of the generated data. The data
-        produced using Anomalous Audio Data Generation (AADG) allows us to train
-        an anomaly detection model which we test on real-world data to prove the
-        effectiveness of our framework. We also show the shortcomings of current
-        SOTA audio models, particularly in handling out-of-distribution
-        scenarios thus making a case for improving their performance by
-        including data using AADG. Our contributions fill a critical void in
-        audio anomaly detection resources and provide a scalable tool for
-        generating diverse, realistic audio data.
-      </p>
+      <div class="abstract-block">
+        <p class="abstract-text">
+          We introduce a novel, general purpose audio generation framework
+          specifically designed for Audio Anomaly Detection(AAD) and
+          Localization. Unlike existing datasets that predominantly focus on
+          industrial and machine-related sounds, our framework focuses on a
+          broader range of environments, particularly useful in real-world
+          scenarios where only audio data are available, such as telephonic
+          audio. To generate such data, we propose a new method, Anomalous Audio
+          Data Generation(AADG), inspired by the LLM-Modulo
+          <a href="">[1]</a> framework, which leverages Large Language
+          Models(LLMs) as world models to simulate such real-world scenarios.
+          This tool is modular, allowing for a plug-and-play approach. It works
+          by first using LLMs to predict plausible real-world scenarios. An LLM
+          further extracts the constituent sounds, the order and the way in
+          which these should be merged to create coherent wholes. Constituent
+          audios are then generated using text-to-audio models and merged based
+          on the LLM's instructions. We include a rigorous verification of each
+          output stage, ensuring the reliability of the generated data. The data
+          produced using Anomalous Audio Data Generation (AADG) allows us to
+          train an anomaly detection model which we test on real-world data to
+          prove the effectiveness of our framework. We also show the
+          shortcomings of current SOTA audio models, particularly in handling
+          out-of-distribution scenarios thus making a case for improving their
+          performance by including data using AADG. Our contributions fill a
+          critical void in audio anomaly detection resources and provide a
+          scalable tool for generating diverse, realistic audio data.
+        </p>
+      </div>
     </div>
     <hr />
     <h2 class="method">METHOD</h2>
@@ -122,7 +125,34 @@
     </div>
 
     <hr />
-    <h2>CONCLUSION</h2>
+    <h2 class="section-heading">CONCLUSION</h2>
+    <div class="conclusion-block">
+      <p>
+        The proposed framework, <strong>AADG</strong>, allows scalable and
+        realistic anomalous audio data generation. Unlike traditional datasets
+        that focus on industrial sounds, it leverages LLMs to simulate
+        real-world scenarios, making it particularly valuable for audio-only
+        applications.
+      </p>
+      <p>
+        The modular design enables integration of various LLMs and text-to-audio
+        models, allowing the generation of complex, anomalous scenarios that are
+        hard to capture in real-world data. While current text-to-audio models
+        still face challenges with generating realistic audio for complex
+        prompts and anomalies, the framework introduces multi-stage verification
+        processes to minimize logical flaws, misalignment, and inconsistent
+        outputs.
+      </p>
+      <p>
+        Additionally, we train a benchmark anomaly detection model on synthetic
+        AADG data and demonstrate its effectiveness in real-world test cases.
+        Although this process still has limitations in handling certain
+        out-of-distribution cases, we fill a critical gap in the field by
+        providing a tool for creating diverse and realistic datasets, which are
+        essential for advancing audio anomaly detection.
+      </p>
+    </div>
+
     <hr />
     <h2>CITATION</h2>
   </body>

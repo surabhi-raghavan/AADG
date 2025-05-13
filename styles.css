@@ -73,6 +73,20 @@ a:visited {
   margin: 2em auto;
   max-width: 90%;
 }
+.abstract-block {
+  max-width: 70em;
+  margin: 2em auto;
+  padding: 1.5em;
+  font-family: "Bitter";
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: justify;
+  background-color: #fcfcfc;
+  border-left: 5px solid #ffd000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
 figure {
   margin: 0;
   max-width: 30em;
@@ -100,6 +114,27 @@ figcaption {
   line-height: 1.7; /* adds breathing room between lines */
   font-size: 1.05rem; /* slightly larger font for readability */
   padding-right: 1em;
+}
+.conclusion-text {
+  font-family: "Bitter";
+  text-align: justify;
+}
+.conclusion-block {
+  max-width: 70em;
+  margin: 2em auto;
+  padding: 1.5em;
+  font-family: "Bitter";
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: justify;
+  background-color: #fcfcfc;
+  border-left: 5px solid #ffd000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.conclusion-block p {
+  margin-bottom: 1.2em;
 }
 
 hr {
