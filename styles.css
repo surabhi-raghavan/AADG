@@ -115,3 +115,51 @@ h2 {
   text-align: center;
   font-size: 2em;
 }
+
+.section-heading {
+  font-family: "Archivo";
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.evaluation-figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 90%;
+  flex-direction: row;
+  text-align: center;
+}
+
+.subfigure {
+  max-width: 23em;
+  flex: 1;
+}
+
+.subfigure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subcaption {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  font-family: "Archivo";
+  color: #333;
+}
+
+.figure-caption {
+  width: 100%;
+  font-size: 1em;
+  font-style: italic;
+  font-family: "Archivo";
+  margin-top: 1em;
+  text-align: center;
+  color: #444;
+}
