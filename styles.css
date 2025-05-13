@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+.author-names {
+  font-family: "Archivo";
+  font-size: small;
+  text-align: center;
+}
+
+.main-heading {
+  font-family: "Bitter";
+  text-align: center;
+}
+.conference-name {
+  text-align: center;
+}
+
+a:link {
+  color: #ff8800;
+  background-color: transparent;
+  text-decoration: none;
+  text-decoration: underline;
+}
+a:visited {
+  color: #333333;
+  text-decoration: below;
+}
+
+.abstract {
+  font-family: "Archivo";
+  text-align: center;
+  font-size: 2em;
+}
+.pipeline {
+  display: block;
+  width: 60em;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin: auto;
+}
+.method {
+  font-family: "Archivo";
+  text-align: center;
+  font-size: 2em;
+}
+.method-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.method-figure figcaption {
+  font-size: 0.95em;
+  font-style: italic;
+  margin-top: 1em;
+  color: #555;
+  font-family: "Archivo";
+  max-width: 60em;
+  line-height: 1.5;
+  padding: 0 1em;
+}
+
+.abstract-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 90%;
+}
+figure {
+  margin: 0;
+  max-width: 30em;
+  flex: 1;
+}
+.abstract-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5em;
+  text-align: center;
+  color: #555;
+  font-family: "Archivo";
+}
+.abstract-text {
+  font-family: "Bitter";
+  text-align: justify;
+  flex: 2;
+  min-width: 25em;
+  max-width: 45em;
+  line-height: 1.7; /* adds breathing room between lines */
+  font-size: 1.05rem; /* slightly larger font for readability */
+  padding-right: 1em;
+}
+
+hr {
+  height: 1px;
+  color: #ffd000;
+  background: #ffd000;
+  font-size: 0;
+  border: 10 dashed;
+}
+
+h2 {
+  font-family: "Archivo";
+  text-align: center;
+  font-size: 2em;
+}

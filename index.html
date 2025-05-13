@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AADG</title>
+    <link rel="stylesheet" href="styles.css " />
+  </head>
+  <body>
+    <h1 class="main-heading">
+      Did You Hear That? Introducing AADG: A Framework for Anomalous Audio Data
+      Generation
+    </h1>
+    <h2 class="author-names">
+      <a href="https://www.linkedin.com/in/ksheerajaraghavan/"
+        >Ksheeraja Raghavan</a
+      >,
+      <a href="https://www.linkedin.com/in/samiran-gode-901941178/"
+        >Samiran Gode </a
+      >, <a href="https://www.linkedin.com/in/ankpsh01/">Ankit Shah</a>,
+      <a href="https://www.linkedin.com/in/surabhi-raghavan/"
+        >Surabhi Raghavan</a
+      >, <a href="https://www.linkedin.com/in/burgard/">Wolfram Burgard</a>,
+      <a href="https://www.linkedin.com/in/bhiksha-raj-0531b0/">Bhiksha Raj</a>,
+      <a href="http://ayesha.lti.cs.cmu.edu/mlsp/people/rsingh/index.html"
+        >Rita Singh</a
+      >
+    </h2>
+    <h4 class="conference-name">
+      <a href="https://synthetic-data-iclr.github.io">SynthData@ICLR 2025</a>,
+      Poster Presentation
+    </h4>
+    <hr />
+    <h2 class="abstract">ABSTRACT</h2>
+    <div class="abstract-container">
+      <figure>
+        <img
+          src="assets/images/did you hear-2.png"
+          alt="Did You Hear That?"
+          class="abstract-img"
+        />
+        <figcaption>
+          Anomalous Audio Data Generation (AADG), a framework that synthetically
+          generates real life Audio Data with Anomalies by leveraging LLMs as a
+          world model
+        </figcaption>
+      </figure>
+      <p class="abstract-text">
+        We introduce a novel, general purpose audio generation framework
+        specifically designed for Audio Anomaly Detection(AAD) and Localization.
+        Unlike existing datasets that predominantly focus on industrial and
+        machine-related sounds, our framework focuses on a broader range of
+        environments, particularly useful in real-world scenarios where only
+        audio data are available, such as telephonic audio. To generate such
+        data, we propose a new method, Anomalous Audio Data Generation(AADG),
+        inspired by the LLM-Modulo <a href="">[1]</a> framework, which leverages
+        Large Language Models(LLMs) as world models to simulate such real-world
+        scenarios. This tool is modular, allowing for a plug-and-play approach.
+        It works by first using LLMs to predict plausible real-world scenarios.
+        An LLM further extracts the constituent sounds, the order and the way in
+        which these should be merged to create coherent wholes. Constituent
+        audios are then generated using text-to-audio models and merged based on
+        the LLM's instructions. We include a rigorous verification of each
+        output stage, ensuring the reliability of the generated data. The data
+        produced using Anomalous Audio Data Generation (AADG) allows us to train
+        an anomaly detection model which we test on real-world data to prove the
+        effectiveness of our framework. We also show the shortcomings of current
+        SOTA audio models, particularly in handling out-of-distribution
+        scenarios thus making a case for improving their performance by
+        including data using AADG. Our contributions fill a critical void in
+        audio anomaly detection resources and provide a scalable tool for
+        generating diverse, realistic audio data.
+      </p>
+    </div>
+    <hr />
+    <h2 class="method">METHOD</h2>
+    <figure class="method-figure">
+      <img src="assets/images/pipeline.png" alt="Pipeline" class="pipeline" />
+      <figcaption>
+        Illustration of the pipeline for generating and verifying anomalous
+        audio data. The process begins with scene generation, followed by
+        information extraction using a Large Language Model (LLM). Individual
+        audio components are synthesized from text descriptions and meticulously
+        verified for accuracy and merged according to LLM instructions,
+        culminating in a dataset of realistic anomalous audio.
+      </figcaption>
+    </figure>
+    <hr />
+    <h2>AUDIO EXAMPLES</h2>
+    <hr />
+    <h2>EVALUTAION</h2>
+
+    <hr />
+    <h2>CONCLUSION</h2>
+    <hr />
+    <h2>CITATION</h2>
+  </body>
+</html>
