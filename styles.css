@@ -25,7 +25,11 @@ a:visited {
   color: #333333;
   text-decoration: below;
 }
-
+p {
+  font-family: "Archivo";
+  font-size: small;
+  text-align: center;
+}
 .abstract {
   font-family: "Archivo";
   text-align: center;
