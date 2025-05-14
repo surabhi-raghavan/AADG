@@ -25,7 +25,7 @@ a:visited {
   color: #333333;
   text-decoration: below;
 }
-p {
+.equal {
   font-family: "Archivo";
   font-size: small;
   text-align: center;
