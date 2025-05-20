@@ -127,8 +127,9 @@
     </div>
     <hr />
 
-    <h2>COMPARISON WITH STABLE AUDIO</h2>
-
+    <h2 class="section-heading">EVALUATION</h2>
+    <!-- Subsection 1: Comparison with Stable Audio -->
+    <h3 class="subsection-heading">Comparison with Stable Audio</h3>
     <div class="audio-scroll-container">
       <div class="audio-card">
         <div class="audio-label">Prompt</div>
@@ -176,9 +177,9 @@
         <audio controls src="assets/audio/stable audio/10011.wav"></audio>
       </div>
     </div>
-    <hr />
-    <h2 class="section-heading">WHAT DOES GAMA HAVE TO SAY?</h2>
-
+    <hr class="subsection-divider" />
+    <!-- Subsection 2: What Does GAMA Have to Say? -->
+    <h3 class="subsection-heading">What Does GAMA Have to Say?</h3>
     <div class="gama-card-container">
       <div class="gama-card">
         <audio
@@ -247,11 +248,9 @@
         </p>
       </div>
     </div>
+    <hr class="subsection-divider" />
 
-    <hr />
-
-    <h2 class="section-heading">EVALUATION</h2>
-
+    <h3 class="subsection-heading">Real-world Audio Anomaly Detection</h3>
     <div class="evaluation-figure">
       <div class="subfigure">
         <img src="assets/images/pr_curve.png" alt="Precision-Recall Curve" />
@@ -281,6 +280,14 @@
       <div class="figure-caption">
         Anomaly scores and Feature Magnitudes from our method.
       </div>
+      <p>
+        We evaluated our model—trained exclusively on synthetic anomalies— on
+        this real-world dataset using the RTFM architecture. From 3, the model
+        achieved a ROC-AUC of 87.00 and a Precision-Recall-AUC of 86.79,
+        demonstrating that training on synthetic samples can enable effective
+        anomaly detection in real-world scenarios without requiring labeled real
+        anomalies during training
+      </p>
     </div>
 
     <hr />

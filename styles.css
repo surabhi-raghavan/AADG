@@ -1,5 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+/* Headings (Archivo) */
+h1,
+h2,
+h3,
+h4,
+.audio-label,
+.gama-label,
+.section-heading,
+.conference-name,
+.author-names,
+.equal {
+  font-family: "Archivo", sans-serif;
+}
+
+/* Body Text (Bitter) */
+p,
+.audio-prompt,
+.gama-text,
+.abstract-text,
+.conclusion-text,
+.contact-text,
+figcaption {
+  font-family: "Bitter", serif;
+}
+
+.subsection-heading {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.6em 1.2em;
+  margin: 2em auto 1.5em auto;
+  border: 2px solid #ffd000;
+  border-radius: 10px;
+  background-color: #fffceb;
+  width: fit-content;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.subsection-divider {
+  border: none;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    #ffd000,
+    #ffd000 20px,
+    transparent 20px,
+    transparent 30px
+  );
+  margin: 2em auto;
+  max-width: 70%;
+}
 
 .author-names {
   font-family: "Archivo";
